@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario del segundo ejercicio</title>
+</head>
+<body>
+    <form action="2formulario.php" method="post">
+        <label for="nom">Nombre y apellido: </label> <input type="text" name="nom" id="nom" ><br>
+        <label for="email">Email: </label> <input type="email" name="email" id="email"><br>
+        <label for="enlace">URL de pagina personal: </label> <input type="url" name="enlace" id="enlace"><br>   
+
+        <label for="sexo">Sexo: </label> <br> 
+            <input type="radio" name="sexo" id="sexo" value="m">Masculino<br>
+            <input type="radio" name="sexo" id="sexo" value="f">Femenino<br>
+
+        <label for="nConvivientes">Número de convivientes en el domicilio: </label> 
+            <input type="number" name="nConvivientes" id="nConvivientes"> <br>
+        
+        <label for="aficiones[]">Aficiones: </label>
+            <input type="checkbox" name="aficiones[]" id="peli" value="Peliculas"> Peliculas
+            <input type="checkbox" name="aficiones[]" id="juegos" value="Videojuegos"> Videojuegos
+            <input type="checkbox" name="aficiones[]" id="tec" value="Tecnologia"> Tecnologia
+            <input type="checkbox" name="aficiones[]" id="anime" value="Anime/Manga"> Anime/Manga<br>
+            
+        <label for="menuFav">Menú favorito: </label>
+            <select name="menuFav[]" id="menuFav" multiple> 
+                <option value="Big Mac"> Big Mac</option>
+                <option value="Mac Crispy"> Mac Crispy</option>
+                <option value="Mac Pollo"> Mac Pollo</option>
+                <option value="Cuarto de libra"> Cuarto de libra</option>
+            </select>
+
+        <input class="btn" type="submit" name="enviar" value="Enviar datos"/>
+    </form>
+</body>
+</html>

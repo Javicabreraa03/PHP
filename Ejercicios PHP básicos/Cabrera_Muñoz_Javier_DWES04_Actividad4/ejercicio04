@@ -1,0 +1,11 @@
+<form action="ejercicio04.php" method="get">
+    <p>
+    <label for="usuario">Usuario:</label>
+    <input type="int" name="usuario" id="usuario">
+</p>
+<p>
+    <label for="contraseña">Contraseña:</label>
+    <input type="int" name="contraseña" id="contraseña">
+</p>
+<p><input type="submit" value = "Enviar"></p>
+</form>
